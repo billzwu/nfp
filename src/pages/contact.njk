@@ -1,0 +1,116 @@
+---
+title: Contact - Noble Fir Partners
+layout: base.njk
+permalink: /contact/
+---
+
+<!-- Page Header -->
+<section class="page-header">
+    <div class="container">
+        <h1>Get in Touch</h1>
+        <p class="page-subtitle">Let's discuss your real estate investment goals</p>
+    </div>
+</section>
+
+<!-- Contact Content -->
+<section class="contact-section">
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h2>Connect With Us</h2>
+                <p>Whether you're interested in learning more about our investment approach, exploring partnership opportunities, or discovering how AI can transform your property management, we're here to help.</p>
+
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <h3>Email</h3>
+                        <p><a href="mailto:info@noblefirpartners.com">info@noblefirpartners.com</a></p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>Investment Focus</h3>
+                        <ul>
+                            <li>Triple Net Lease (NNN) Properties</li>
+                            <li>Multifamily Assets</li>
+                            <li>Value-Add Opportunities</li>
+                            <li>AI-Enhanced Portfolio Management</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form id="contactForm" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone (Optional)</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="interest">Area of Interest</label>
+                        <select id="interest" name="interest">
+                            <option value="">Select an option</option>
+                            <option value="nnn">NNN Investment</option>
+                            <option value="multifamily">Multifamily Properties</option>
+                            <option value="partnership">Partnership Opportunities</option>
+                            <option value="technology">PropertyOne.AI Technology</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+                <div id="formMessage" class="form-message"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PropertyOne.AI Section -->
+<section class="propertyone-section">
+    <div class="container">
+        <div class="propertyone-content">
+            <h2>Interested in PropertyOne.AI?</h2>
+            <p>Learn how our AI-powered property management platform can streamline your real estate operations.</p>
+            <div class="propertyone-features">
+                <div class="feature">
+                    <span class="feature-icon">🤖</span>
+                    <span>AI Assistant for property management</span>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">📱</span>
+                    <span>iPhone app coming soon</span>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">📊</span>
+                    <span>Automated bookkeeping and reporting</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const formMessage = document.getElementById('formMessage');
+    formMessage.innerHTML = '<p class="success">Thank you for your message. We will get back to you soon!</p>';
+    formMessage.style.display = 'block';
+    this.reset();
+});
+</script>
