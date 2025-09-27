@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Noble Fir Partners</title>
+    <link rel="stylesheet" href="../assets/css/nfp.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="nfp-header">
+    <div class="nfp-header-content">
+        <div class="nfp-logo">
+            <a href="../index.html" class="logo-link">
+                <span class="logo-icon">🌲</span>
+                <div class="logo-text">
+                    <span class="logo-main">Noble Fir Partners</span>
+                    <span class="logo-tagline">Private Equity Real Estate & AI Technology</span>
+                </div>
+            </a>
+        </div>
+        <nav class="nfp-nav">
+            <a href="../index.html" class="nav-link ">Home</a>
+            <a href="../about/index.html" class="nav-link ">About</a>
+            <a href="../technology/index.html" class="nav-link ">Technology</a>
+            <a href="../contact/index.html" class="nav-link nav-cta active">Contact</a>
+        </nav>
+        <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</header>
+
+    
+<!-- Page Header -->
+<section class="page-header">
+    <div class="container">
+        <h1>Get in Touch</h1>
+        <p class="page-subtitle">Let's discuss your real estate investment goals</p>
+    </div>
+</section>
+
+<!-- Contact Content -->
+<section class="contact-section">
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h2>Connect With Us</h2>
+                <p>Whether you're interested in learning more about our investment approach, exploring partnership opportunities, or discovering how AI can transform your property management, we're here to help.</p>
+
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <h3>Email</h3>
+                        <p><a href="mailto:info@noblefirpartners.com">info@noblefirpartners.com</a></p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>Investment Focus</h3>
+                        <ul>
+                            <li>Triple Net Lease (NNN) Properties</li>
+                            <li>Multifamily Assets</li>
+                            <li>Value-Add Opportunities</li>
+                            <li>AI-Enhanced Portfolio Management</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form id="contactForm" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone (Optional)</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="interest">Area of Interest</label>
+                        <select id="interest" name="interest">
+                            <option value="">Select an option</option>
+                            <option value="nnn">NNN Investment</option>
+                            <option value="multifamily">Multifamily Properties</option>
+                            <option value="partnership">Partnership Opportunities</option>
+                            <option value="technology">PropertyOne.AI Technology</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+                <div id="formMessage" class="form-message"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PropertyOne.AI Section -->
+<section class="propertyone-section">
+    <div class="container">
+        <div class="propertyone-content">
+            <h2>Interested in PropertyOne.AI?</h2>
+            <p>Learn how our AI-powered property management platform can streamline your real estate operations.</p>
+            <div class="propertyone-features">
+                <div class="feature">
+                    <span class="feature-icon">🤖</span>
+                    <span>AI Assistant for property management</span>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">📱</span>
+                    <span>iPhone app coming soon</span>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">📊</span>
+                    <span>Automated bookkeeping and reporting</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const formMessage = document.getElementById('formMessage');
+    formMessage.innerHTML = '<p class="success">Thank you for your message. We will get back to you soon!</p>';
+    formMessage.style.display = 'block';
+    this.reset();
+});
+</script>
+
+    <footer class="nfp-footer">
+    <div class="footer-content">
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h3>Noble Fir Partners</h3>
+                <p>A leading private equity firm specializing in commercial real estate investments enhanced by cutting-edge AI technology.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../about/index.html">About Us</a></li>
+                    <li><a href="../technology/index.html">Technology</a></li>
+                    <li><a href="../contact/index.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Investment Focus</h4>
+                <ul>
+                    <li>Triple Net Lease (NNN)</li>
+                    <li>Multifamily Properties</li>
+                    <li>Value-Add Opportunities</li>
+                    <li>AI-Driven Analysis</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p class="footer-contact">
+                    <a href="mailto:info@noblefirpartners.com">info@noblefirpartners.com</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Noble Fir Partners. All rights reserved. | <a href="../privacy/index.html">Privacy Policy</a> | <a href="../terms/index.html">Terms of Use</a></p>
+        </div>
+    </div>
+</footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const nav = document.querySelector('.nfp-nav');
+            nav.classList.toggle('mobile-active');
+        }
+    </script>
+</body>
+</html>
