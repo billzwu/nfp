@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "mkdir -p _site && cp -r static-site/* _site/",
-    "build:static": "mkdir -p _site && cp -r static-site/* _site/",
+    "build:static": "mkdir -p _site && cp -r static-site/* _site/ && cp _redirects _headers _site/ 2>/dev/null || true",
     "build:cloudflare": "npm run build:static",
     "dev": "eleventy --serve",
     "start": "eleventy --serve"
