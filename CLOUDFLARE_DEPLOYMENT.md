@@ -10,9 +10,10 @@ Use these settings in your Cloudflare Pages dashboard:
 
 ### Build Configuration
 - **Framework preset**: `None` or `Static site`
-- **Build command**: `npm run build:cloudflare`
+- **Build command**: `npm run build` (or `npm run build:cloudflare`)
 - **Build output directory**: `_site`
 - **Root directory**: `/` (leave empty)
+- **Node version**: 18 or higher
 
 ### Environment Variables
 No environment variables needed - this is a pure static site.

@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "eleventy && cp -r _site/* static-site/",
-    "build:static": "cp -r static-site/* _site/",
+    "build": "mkdir -p _site && cp -r static-site/* _site/",
+    "build:static": "mkdir -p _site && cp -r static-site/* _site/",
     "build:cloudflare": "npm run build:static",
     "dev": "eleventy --serve",
     "start": "eleventy --serve"
