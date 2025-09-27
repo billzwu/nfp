@@ -1,6 +1,0 @@
-name = "nfp-static-site"
-compatibility_date = "2025-09-27"
-
-# Static assets configuration for Cloudflare Pages
-[assets]
-directory = "./_site"
