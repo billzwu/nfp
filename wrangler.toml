@@ -1,4 +1,4 @@
-name = "nfp-static-site"
+name = "nfp"
 compatibility_date = "2025-09-27"
 
 # Static assets configuration for Cloudflare Pages
